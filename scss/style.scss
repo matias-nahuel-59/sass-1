@@ -16,14 +16,12 @@ header{
             a{
                 img{
                     width: 10%;
-                margin: 10px;
+                    margin: 10px;
                 }
             }
         }
     }
 }
-
-
 
 .nav-menu{
     ul{
@@ -33,16 +31,16 @@ header{
             list-style: none;
             a{
                 text-decoration: none;
-                color: #fff;
+                color: $color-blanco;
                 &:hover{
                     font-size: 20px;
-                    background-color: #fff;
-                    color: rgb(253, 127, 24); 
-                    }
+                    background-color: $color-blanco;
+                    color: $color-naranja; 
                 }
             }
         }
     }
+}
 
 
 // MAIN 
@@ -51,7 +49,7 @@ header{
         margin-top: 85px;
         font-size: 50px;
         font-family: 'Bebas Neue';
-        color: rgb(253, 127, 24);
+        color: $color-naranja;
         background-image: url(../img/casa-kame.jpg);
         background-size: cover;
         width: 100%;
@@ -63,9 +61,10 @@ header{
 }
 
 
-main{
-    .catalogo {
-    display: flex;
+
+.main{
+    .catalogo{
+        display: flex;
     margin-top: 15px;
     margin-bottom: 15px;
     justify-content: space-evenly;
@@ -73,24 +72,24 @@ main{
     overflow: auto;
     div{
         div{
-        a{
             text-decoration: none;
-            background-color: #111111;
-            color: #fff;
+            background-color: $color-negro;
+            color: $color-blanco;
             padding: 5px;
             width: 90px;
             border: none;
             border-radius: 3px;
             &:hover{
-                    background-color: rgb(253, 127, 24);
-                    color: #fff;
+                    background-color: $color-naranja;
+                    color: $color-blanco;
                     border: none;
-                }
+            }
         }
     }
-}
     }
 }
+
+
 
 
 .card-body {
@@ -104,7 +103,7 @@ main{
 
 // FOOTER
 .footer {
-    background-color: #111;
+    background-color: $color-negro;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -120,12 +119,12 @@ main{
                 text-align: center;
                 a{
                     text-decoration: none;
-                    color: white;
+                    color: $color-blanco;
                     padding: 6px;
                     border-radius: 3px;
                     &:hover{
                         font-size: small;
-                        color: rgb(253, 127, 24);
+                        color: $color-naranja;
                     }
                 }
             }
@@ -144,17 +143,17 @@ main{
 }
 
 // // MEDIA QUERIE DEL FOOTER
-// @media screen and (max-width: 460){
-//     .footer{
-//         width: 100%;
-//         height: 100%;
-//         ul{
-//             flex-direction: column;
-//             text-align: center;
-//             li{
-//                 height: auto;
-//                 text-align: center;
-//             }
-//         }
-//     }
-// }
+@media screen and (max-width: 460){
+    .footer{
+        width: 100%;
+        height: 100%;
+        ul{
+            flex-direction: column;
+            text-align: center;
+            li{
+                height: auto;
+                text-align: center;
+            }
+        }
+    }
+}
